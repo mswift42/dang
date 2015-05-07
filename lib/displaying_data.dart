@@ -1,1 +1,23 @@
 library displaying_data;
+
+import 'package:angular2/angular2.dart';
+import 'package:angular2/src/reflection/reflection.dart' show reflector;
+import 'package:angular2/src/reflection/reflection_capabilities.dart'
+    show ReflectionCapabilities;
+
+@Component(selector: 'display')
+  
+@View(templateUrl: '../web/views/showtime.html')
+
+class DisplayComponent {
+  String time;
+  Timer _timer;
+
+  DisplayComponent() {
+    _updateTime(null);
+    _timer = new Timer.periodic(new Duration(seconds: 1), _updateTime);
+  }
+  _updateTime(Timer _) {
+    time = new DateTime.now().toString();
+  }
+}
