@@ -2,6 +2,7 @@
 // is governed by a BSD-style license that can be found in the LICENSE file.
 
 import 'package:angular2/angular2.dart';
+import 'package:dang/displaying_data.dart';
 
 // These imports will go away soon:
 import 'package:angular2/src/reflection/reflection.dart' show reflector;
@@ -19,4 +20,5 @@ class AppComponent {
 void main() {
   reflector.reflectionCapabilities = new ReflectionCapabilities();
   bootstrap(AppComponent);
+  bootstrap(DisplayComponent);
 }
