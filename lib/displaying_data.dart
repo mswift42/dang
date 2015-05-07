@@ -1,11 +1,12 @@
 library displaying_data;
 
 import 'package:angular2/angular2.dart';
+import 'dart:async';
 
 
 @Component(selector: 'display')
   
-@View(templateUrl: '../web/views/showtime.html')
+@View(templateUrl: '../views/showtime.html')
 
 class DisplayComponent {
   String time;
