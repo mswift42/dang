@@ -23,4 +23,4 @@ void main() {
   bootstrap(AppComponent);
   bootstrap(DisplayComponent);
   bootstrap(DisplayFriends);
-}
+  bootstrap(TodoList);}
