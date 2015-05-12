@@ -4,7 +4,7 @@ import 'package:angular2/angular2.dart';
 import 'dart:html';
 
 @Component(selector: 'todo-list')
-@View(templateUrl: '../viewr/todoinput.html', directives: const [For])
+@View(templateUrl: '../views/todoinput.html', directives: const [For])
 class TodoList {
   List<String> todos = [
     'Eat breakfast',
