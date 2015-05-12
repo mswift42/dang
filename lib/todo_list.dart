@@ -4,7 +4,8 @@ import 'package:angular2/angular2.dart';
 
 @Component(selector: 'todo-list')
 
-@View(templateUrl: '../viewr/todoinput.html')
+  @View(templateUrl: '../viewr/todoinput.html',
+      directives: const [For])
 
 class TodoList {
   List<String> todos =
@@ -12,5 +13,12 @@ class TodoList {
     
   addTodo(String todo) {
     todos.add(todo);
+  }
+   doneTyping(KeyboardEvent event) {
+    if (event.keyCode == KeyCode.ENTER) {
+      InputElement e = event.target;
+      addTodo(e.value);
+      e.value = null;
+    }
   }
 }
