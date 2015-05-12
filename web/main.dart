@@ -4,6 +4,7 @@
 import 'package:angular2/angular2.dart';
 import 'package:dang/displaying_data.dart';
 import 'package:dang/display_friends.dart';
+import 'package:dang/todo_list.dart';
 
 // These imports will go away soon:
 import 'package:angular2/src/reflection/reflection.dart' show reflector;
