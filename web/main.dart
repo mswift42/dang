@@ -7,9 +7,7 @@ import 'package:dang/display_friends.dart';
 import 'package:dang/todo_list.dart';
 
 // These imports will go away soon:
-import 'package:angular2/src/reflection/reflection.dart' show reflector;
-import 'package:angular2/src/reflection/reflection_capabilities.dart'
-    show ReflectionCapabilities;
+import 'package:angular2/bootstrap.dart';
 
 @Component(selector: 'my-app')
   
@@ -20,8 +18,8 @@ class AppComponent {
 }
 
 void main() {
-  reflector.reflectionCapabilities = new ReflectionCapabilities();
   bootstrap(AppComponent);
   bootstrap(DisplayComponent);
   bootstrap(DisplayFriends);
-  bootstrap(TodoList);}
+  bootstrap(TodoList);
+}

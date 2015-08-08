@@ -3,11 +3,8 @@ library displaying_data;
 import 'package:angular2/angular2.dart';
 import 'dart:async';
 
-
 @Component(selector: 'display')
-  
-@View(templateUrl: '../views/showtime.html')
-
+@View(templateUrl: '../web/views/showtime.html')
 class DisplayComponent {
   String time;
   Timer _timer;
